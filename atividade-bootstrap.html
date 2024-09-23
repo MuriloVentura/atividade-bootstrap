@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Responsiva com Bootstrap</title>
+  <!-- Link para o CSS do Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cabeçalho com menu de navegação -->
+  <header class="bg-primary text-white text-center py-4">
+    <h1>Minha Página Web</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Corpo com três seções, usando containers -->
+  <main class="container my-5">
+    <!-- Primeira seção -->
+    <section class="my-5">
+      <h2 class="text-center">Seção 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum quam et nulla dignissim, nec vehicula ex interdum. Morbi at neque ut lorem gravida dictum.</p>
+    </section>
+
+    <!-- Segunda seção -->
+    <section class="my-5">
+      <h2 class="text-center">Seção 2</h2>
+      <p>Praesent vulputate libero et felis efficitur, id pharetra nulla sodales. Curabitur ut velit quis lacus tristique convallis ac eget nulla. Cras pulvinar, magna vel tincidunt porta, nisi erat fringilla eros, nec lobortis sem ex at felis.</p>
+    </section>
+
+    <!-- Terceira seção -->
+    <section class="my-5">
+      <h2 class="text-center">Seção 3</h2>
+      <p>Phasellus in est velit. Integer sed turpis quam. Aenean eget tincidunt lectus. Aliquam erat volutpat. Donec vel sapien ut felis accumsan tincidunt at vel felis.</p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; <span id="ano-atual"></span> Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Script para atualizar o ano automaticamente -->
+  <script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
